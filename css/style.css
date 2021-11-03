@@ -314,7 +314,7 @@ p {
 .banner .imgbg img{
 	display:none;
 }
-.banner .title-box h2{
+.banner .title-box h2{  /*puede cambiar color aca pero no da*/
 	text-align: left;
     font-size: 30px;
     color: #fff;
@@ -360,7 +360,7 @@ p {
 .item .carousel-caption .caption-heading {
     text-align: left;
     font-size: 30px;
-    color: #fff;
+    color: #fff; /*cambia texto del banner*/
     line-height: 42px;
     font-family: raleway, sans-serif;
     font-weight: 900;
@@ -477,12 +477,12 @@ p {
 	text-align:right;
 }
 .subbanner .caption a{
-	color:#fff;
+	color:#000;
 	text-decoration:none;
 }
 .subbanner .caption h3{
 	font-size: 30px;
-    color: #fff;
+    color: rgb(32, 32, 32);  /*Cambia color de la letra del subbanner*/
     line-height: 42px;
     font-weight: 900;
 	text-transform:uppercase;
@@ -495,11 +495,11 @@ p {
     background-color: transparent;
 }
 .subbanner .breadcrumb > .active {
-    color: #fff;
+    color: #000;
 }
 .subbanner .breadcrumb > li + li:before {
   padding: 0 5px;
-  color: #fff;
+  color: #000;
   content: "/\00a0";
 }
 
