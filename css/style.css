@@ -216,9 +216,11 @@ p {
 	margin-top: -15px;
 }
 .navbar-main .navbar-brand > img {
-	width: 100%;
-    -webkit-transition: 0.2s all linear;
-	        transition: 0.2s all linear;
+	max-width: 100%;
+	min-width: 0%;
+	height: auto;
+
+
 }
 .navbar-main .nav > li > a {
     position: relative;
@@ -1710,7 +1712,8 @@ img.redimension {
 		padding: 6px 15px;
 		width: 150px;
 	}
-	.navbar-brand > img {
+	.navbar-brand > img {   /*Se modifica para var el logo y la resulución que se necesite*/
+		width: 42%;
 		display: block;
 	}
 	.navbar-main .navbar-brand > img {
