@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 	"use strict";
@@ -23,7 +25,12 @@ $(document).ready(function(){
 			jQuery('.navbar-main').removeClass('stiky'); 
 		}
 	});
-	
+
+	/* =================================
+	MujerServicios
+	=================================== */
+	/*$(".services-item-image").delay(4000).fadeOut();*/
+
 	
 	/* =================================
 	FAQ
@@ -54,6 +61,12 @@ $(document).ready(function(){
 			map.setZoom(map.getZoom()-1)
 		});
 	}
+
+	let close_button = document.getElementById('close-button');  //Se agregó para la imagen banner
+	close_button.addEventListener("click", function(e) {
+		e.preventDefault();
+		document.getElementById("window-notice").style.display = "none";
+	});
 
 	if ($('#maps').length) {
 	//set your google maps parameters
