@@ -11,7 +11,134 @@ $(document).ready(function(){
 	$(".loader").delay(400).fadeOut();
     $(".animationload").delay(400).fadeOut("fast");
 	
+	var slideUp = {
+		duration: 3000,
+		origin: 'bottom',
+		distance: '-100px'
+	};
+	ScrollReveal().reveal('.navbar', slideUp);
+
+	var wn = {
+		duration: 24000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.window-notice', wn);
+
+	var sa = {
+		duration: 8000,
+
+		distance: '100px'
+	};
+	ScrollReveal().reveal('.about', sa);
+
+	var ssa = {
+		duration: 6000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.services', ssa);
+
 	
+	var sf = {
+		duration: 5000,
+		origin: 'top',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.stat-facts', sf);
+
+	var tips = {
+		duration: 5000,
+		origin: 'botton',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.tips', tips);
+	
+	var noticias = {
+		duration: 5000,
+		origin: 'top',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.noticias', noticias);
+
+	var t = {
+		duration: 5000,
+		origin: 'left',
+		distance: '500px'
+	};
+	ScrollReveal().reveal('.testimonials', t);
+
+	var It1 = {
+		duration: 5000,
+		origin: 'right',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It1', It1);
+
+	var It2 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It2', It2);
+
+	var It3 = {
+		duration: 5000,
+		origin: 'right',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It3', It3);
+
+	var It4 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It4', It4);
+
+	var It5 = {
+		duration: 5000,
+		origin: 'right',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It5', It5);
+
+	var It6 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It6', It6);
+
+	var It7 = {
+		duration: 5000,
+		origin: 'right',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It7', It7);
+
+	var It8 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It8', It8);
+
+	var It9 = {
+		duration: 5000,
+		origin: 'right',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It9', It9);
+
+	var It10 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '400px'
+	};
+	ScrollReveal().reveal('.It10', It10);
+
+
 	/* =================================
 	NAVBAR 
 	=================================== */
