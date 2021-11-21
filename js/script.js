@@ -138,7 +138,99 @@ $(document).ready(function(){
 	};
 	ScrollReveal().reveal('.It10', It10);
 
+	/* pricing */
+	var au = {
+		duration: 5000,
+		origin: 'rigth',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.autoservicio', au);
 
+	var man = {
+		duration: 5000,
+		origin: 'left',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.manita', man);
+
+	var sec = {
+		duration: 5000,
+		origin: 'rigth',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.secado', sec);
+
+	var pla = {
+		duration: 5000,
+		origin: 'left',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.plancha', pla);
+
+	var tinto = {
+		duration: 5000,
+		origin: 'rigth',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.tinto', tinto);
+
+	var mem = {
+		duration: 5000,
+		origin: 'left',
+		distance: '2000px'
+	};
+	ScrollReveal().reveal('.mem', mem);
+
+	/*About*/
+	var stat2 = {
+		duration: 5000,
+		origin: 'left',
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.stat2', stat2);
+
+	/* Ubication*/
+	var chalco = {
+		duration: 5000,
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.chalco', chalco);
+
+	var aca = {
+		duration: 5000,
+		origin: 'left',
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.aca', aca);
+
+	var ara = {
+		duration: 5000,
+		origin: 'rigth',
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.ara', ara);
+
+	var extr = {
+		duration: 5000,
+
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.extr', extr);
+
+	/*Blog */
+	var vid = {
+		duration: 5000,
+
+		distance: '2000px'
+	};
+
+	ScrollReveal().reveal('.vid', vid);
+	
 	/* =================================
 	NAVBAR 
 	=================================== */
