@@ -94,6 +94,34 @@ body{
 /* ==========================
 1. General
 ============================= */
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background: #ffff;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 700px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+	color:#000;
+	text-align: center;
+}
 .animationload {
     position: fixed;
     top: 0;
@@ -528,8 +556,8 @@ p {
 }
 .why-item .icon{
 	background-color:#16A085;
-	width:80px;
-	height:80px;
+	width:125px; /*Change icon covid */
+	height:125px;
 	text-align:center;
 	border-radius:50%;
 	-moz-border-radius: 50%;
@@ -541,7 +569,7 @@ p {
 	background-color:#FBA301;
 }
 .why-item .icon .fa{
-	font-size:30px;
+	font-size:80px; /*Change icon covid */
 	color:#fff;
 }
 .why-item .ket{
@@ -687,8 +715,8 @@ p {
 	margin-bottom:40px;
 }
 .stat-item .icon{
-	width:80px;
-	height:80px;
+	width:125px; 
+	height:125px;
 	border-radius:50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -700,7 +728,7 @@ p {
 	background-color:#FBA301; /*cambia color de círculos al seleccionar*/
 }
 .stat-item .icon .fa{
-	font-size: 30px;
+	font-size: 80px;
 	color:#fff;
 }
 .stat-item .stat-title{
