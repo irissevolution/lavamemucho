@@ -1604,6 +1604,10 @@ pre code {
 .col-xs-12 {
   width: 100%;
 }
+.col-xs-12alter { 
+  width: 100%;
+  left: 15%;
+}
 .col-xs-11 {
   width: 91.66666667%;
 }
@@ -6466,6 +6470,11 @@ button.close {
     display: inline-block !important;
   }
 }
+@media (max-width: 991px) { /*Se agregó para re dimensionar*/
+  .col-xs-12alter{
+    width: 100%;
+    left: 0%;
+  }
 @media (min-width: 1200px) {
   .visible-lg {
     display: block !important;

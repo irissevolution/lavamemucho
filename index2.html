@@ -40,9 +40,11 @@
 	
 	
     <script type="text/javascript" src="js/modernizr.min.js"></script>
+	<!--<script type="text/javascript" scr="js/ScrollReveal.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
 	
-	
-
 </head>
 
 <body>
@@ -52,9 +54,22 @@
 		<div class="loader"></div>
 	</div>
 	
+	<div id="pop" style="display: none;">
+		<div class="window-notice" id="window-notice">
+			<div class="content">
+				<div class="content-text">¡Bienvenido a Lavanderías Lávame Mucho! ¿Te tomarías unos minutos para responder una encuesta? El objetivo es conocer y verificar la satisfacción del cliente del servicio proporcionado.
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcOr_lLl8e1h0gEeZQFJLlQybJBfAwzEuiNOrKBsymmBIzKg/viewform" target="_blank">¡Contestar encuesta!</a></div>
+				<p></p>
+				<img src="images/membresia1_600x400.jpg" alt="" class="img-responsive" />
+				<p></p>
+				<div class="content-buttons"><a href="#" id="close-button">En otro momento</a></div>
+				
+			</div>
+		</div> <!--Obtenido de  https://cosasdedevs.com/posts/ventanas-emergentes-con-html-y-css/ -->
+	</div>
 	
 	<!-- NAVBAR SECTION -->
-	<div class="navbar navbar-main navbar-fixed-top">
+	<div class="navbar navbar-main navbar-fixed-top" id="close-button">
 		<div class="header-top">
 			<div class="container">
 				<div class="row">
@@ -77,6 +92,7 @@
 							<a href="#" title=""><span class="fa fa-pinterest"></span></a> -->
 							<a href="https://www.instagram.com/lavamemucho/"  target="_blank" title=""><span class="fa fa-instagram"></span></a>
 							<a href="https://maps.app.goo.gl/NgvuJZFASPAQPzXq9" target="_blank" title=""><span class="fa fa-map-marker"></span></a>
+							<a href="https://api.whatsapp.com/send?phone=+525571197347&text=Hola, me podrían brindar información sobre sus servicios?" target="_blank" title=""><span class="fa fa-whatsapp"></span></a>
 						</div>
 					</div>
 					
@@ -123,7 +139,9 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="images/Imagen pagina principal 2.jpg" alt="...">
+					<div class="imgbg" style="background:url('images/Pagina principal .jpg') no-repeat center center;   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+						
+					</div>
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="wrap-caption">
@@ -135,7 +153,9 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/promociones.jpg" alt="...">
+					<div class="imgbg" style="background:url('images/promociones.jpg') no-repeat center center;   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+						
+					</div>
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="wrap-caption">
@@ -302,7 +322,7 @@
 						</div>
 						<div class="ket">
 							<h4>CAFETER&Iacute;A Y SANITARIO</h4>
-							<p>Se ofrece servicio de cafería con juegos de mesa y servicio de sanitario.</p>
+							<p>Servicio de cafería con juegos de mesa y sanitarios.</p>
 						</div>
 					</div>
 					
@@ -314,7 +334,7 @@
 							<img src="images/servicio.PORENCARGO2.jpg" alt="" class="img-circle" />
 						</div>
 						<div class="ket">
-							<h4>"Por encargo"</h4>
+							<h4>POR ENCARGO</h4>
 							<p>Se puede depositar la ropa en el local o con la menmbresía podemos ir a su domicilio, implica el lavado, secado y doblado para ambos servicios.</p>
 						</div>
 					</div>
@@ -341,7 +361,7 @@
 				
 				<div class="col-sm-12 col-md-4 col-md-offset-4">
 					<div class="services-item-image">
-						<img src="images/service_img_home2-u24208-fr3.png" alt="" />
+						<img src="images/Servicios2.png" alt="" />
 					</div>
 				</div>
 				
@@ -350,68 +370,159 @@
 		</div>
 	</div>
 		
-	<!-- STATS SECTION FACTS --> 
+
 <!-- STATS SECTION FACTS --> 
-<div class="section stat-facts" style="background:url('images/page_img-u24411-fr1.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
-	<div class="bg-overlay">
+	<div class="section stat-facts" style="background:url('images/page_img-u24411-fr1.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+		<div class="bg-overlay">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<div class="stat-item">
+							<div class="icon">
+								<i class="fa fa-briefcase"></i>
+							</div>
+							<div class="stat-title">
+								<h3 class="number">+3,000</h3>
+								<p>Clientes satisfechos</p>
+							</div>	
+						</div>
+
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<div class="stat-item">
+							<div class="icon">
+								<i class="fa fa-camera-retro"></i>
+
+							</div>
+							<div class="stat-title">
+								<h3 class="number">27</h3>
+								<p>Equipos en cada sucursal</p>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<div class="stat-item">
+							<div class="icon">
+								<i class="fa fa-thumbs-o-up"></i>
+							</div>
+							<div class="stat-title">
+								<h3 class="number">2,200</h3>
+								<p>Me gusta</p>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<div class="stat-item">
+							<div class="icon">
+								<i class="fa fa-users"></i>
+							</div>
+							<div class="stat-title">
+								<h3 class="number">5</h3>
+								<p>Sucarsales</p>
+							</div>	
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Tips seccion -->
+	<div class="section blog pbot-main tips">
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-					<div class="stat-item">
-						<div class="icon">
-							<i class="fa fa-briefcase"></i>
-						</div>
-						<div class="stat-title">
-							<h3 class="number">5</h3>
-							<p>Negocios con clientes</p>
-						</div>	
-					</div>
-
-				</div>
-				
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-					<div class="stat-item">
-						<div class="icon">
-							<i class="fa fa-camera-retro"></i>
-
-						</div>
-						<div class="stat-title">
-							<h3 class="number">25</h3>
-							<p>M&aacute;quinas de lavado</p>
-						</div>	
+				<div class="col-sm-12 col-md-6 col-md-offset-3">
+					<div class="page-title">
+						<h2 class="lead">TIPS DE LAVADO</h2>
 					</div>
 				</div>
+			</div>
+			
+			<div class="row">
 				
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-					<div class="stat-item">
-						<div class="icon">
-							<i class="fa fa-thumbs-o-up"></i>
+				<div class="col-sm-12 col-md-4">
+					<div class="blog-item">
+						<div class="gambar">
+							<div class="icon-news">
+								<div class="fa fa-image"></div>
+							</div>
+							<img src="images/detergente.jpg" alt="" class="img-responsive" />
 						</div>
-						<div class="stat-title">
-							<h3 class="number">116</h3>
-							<p>Me gusta</p>
-						</div>	
+						<div class="item-body">
+							<div class="description">
+								<p class="lead">
+									<a href="#" title="">Utiliza un suavizante - consejos y tips.</a>
+								</p>
+								<p>Este paso en la lavada es indispensable ya que acondiciona las fibras de las telas, suaviza al tacto y disminuye la estática. Además, alarga la vida útil de tus prendas..
+								</p><!--Referencia https://www.telemundo.com/shows/un-nuevo-dia/hogar/14-recomendaciones-para-lavar-la-ropa-en-la-lavadora-y-que-quede-muy-limpia-y-bien-cuidada-tmna1086915-->
+							</div>
+						</div>
 					</div>
 				</div>
 				
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-					<div class="stat-item">
-						<div class="icon">
-							<i class="fa fa-users"></i>
+				<div class="col-sm-12 col-md-4">
+					<div class="blog-item">
+						<div class="gambar">
+							<div class="icon-news">
+								<div class="fa fa-image"></div>
+							</div>
+							<img src="images/importa.jpg" alt="" class="img-responsive" />
 						</div>
-						<div class="stat-title">
-							<h3 class="number">50</h3>
-							<p>Empleados</p>
-						</div>	
+						<div class="item-body">
+							<div class="description">
+								<p class="lead">
+									<a href="#" title="">Lava la ropa nueva - consejos y tips.</a>
+								</p>
+								<p>La ropa viene de otros países, en cajas, pasando por polvo, tierra y muchos más contaminantes. Adicionalmente, en algunas tiendas, la gente compra la ropa, la usa y luego la devuelve junto con las etiquetas.</p>
+							</div><!--
+							<div class="body-footer">
+								<div class="author">
+									<i class="fa fa-user"></i> Lavander&iacute;as LM
+								</div>
+								<div class="date">
+									<i class="fa fa-calendar"></i> 23 de Octubre, 2021
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-12 col-md-4">
+					<div class="blog-item">
+						<div class="gambar">
+							<div class="icon-news">
+								<div class="fa fa-image"></div>
+							</div>
+							<img src="images/camisa.jpg" alt="" class="img-responsive" />
+						</div>
+						<div class="item-body">
+							<div class="description">
+								<p class="lead">
+									<a href="#" title="">Desabrocha las camisas - consejos y tips.</a>
+								</p>
+								<p>Afloja los botones antes de lavar. Si no lo haces, la agitación de la lavadora podría hacer que se caigan.</p>
+							</div><!--
+							<div class="body-footer">
+								<div class="author">
+									<i class="fa fa-user"></i> Lavander&iacute;as LM
+								</div>
+								<div class="date">
+									<i class="fa fa-calendar"></i> 23 de Octubre, 2021
+								</div>
+							</div>-->
+						</div>
 					</div>
 				</div>
 				
 			</div>
 		</div>
 	</div>
-</div>
-	
+
 	<!-- TESTIMONIALS SECTION -->
 	<div class="section testimonials">
 		<div class="container">
@@ -430,15 +541,11 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="testimonials-item">
 						<div class="people">
-							<img src="images/home-testimony-img-1.jpg" alt="" class="img-circle" />
-							<h3>John Deol</h3>
-							<p>Manager Google</p>
+							<img src="images/avatar h1.jpg" alt="" class="img-circle" />
+							<h3>César Maya Menchaca</h3>
 						</div>
 						<div class="quote-box">
-							<p>"I can't believe the level of help and customer service he provided. I don't think I could have reached my deadline without him."</p>
-							<div class="q-url">
-								<a href="#" title="">www.google.com</a>
-							</div>
+							<p>"Una excelente opción para los que sufrimos por espacio al momento de lavar. Los precios muy accesibles. Excelente servicio y máquinas en muy buenas condiciones de gran capacidad."</p>
 						</div>
 					</div>
 				</div>
@@ -446,15 +553,11 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="testimonials-item">
 						<div class="people">
-							<img src="images/home-testimony-img-2.jpg" alt="" class="img-circle" />
-							<h3>Sonny Deol</h3>
-							<p>Jonitor DC</p>
+							<img src="images/avatar m1.jpg" alt="" class="img-circle" />
+							<h3>Laura Reyes</h3>
 						</div>
 						<div class="quote-box">
-							<p>"Hello Rometheme, I just bought a muse template from you. Very happy with it"</p>
-							<div class="q-url">
-								<a href="#" title="">www.dcentertaiment.com</a>
-							</div>
+							<p>"Me encanta. Las instalaciones están increíbles. El personal es maravilloso, siempre al pendiente para ayudarte. La cafetería tiene opciones para todos los gustos y lo último te prestan juegos de mesa para los pequeños. EXCELENTE!!!"</p>
 						</div>
 					</div>
 				</div>
@@ -462,15 +565,12 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="testimonials-item">
 						<div class="people">
-							<img src="images/home-testimony-img-3.jpg" alt="" class="img-circle" />
-							<h3>Jenny Deol</h3>
-							<p>CEO Layer</p>
+							<img src="images/avatar h2.jpg" alt="" class="img-circle" />
+							<h3>Angel Roque</h3>
 						</div>
 						<div class="quote-box">
-							<p>"Hello, I have purchased and used this template. everything is working great!."</p>
-							<div class="q-url">
-								<a href="#" title="">www.layer.com</a>
-							</div>
+							<p>"Sin duda un concepto nuevo he innovador, el trato del personal es muy amable, las lavadoras, secadoras y en general todo el equipo es tecnología de punta, cada fin de semana voy a lavar la ropa de mi familia ahí , ademas cuenta con mesas y televisores para poder disfrutar de algún tentempié mientras tu ropa se lava.
+								100% recomendado"</p>
 						</div>
 					</div>
 				</div>
@@ -478,15 +578,12 @@
 				<div class="col-sm-12 col-md-6">
 					<div class="testimonials-item">
 						<div class="people">
-							<img src="images/home-testimony-img-4.jpg" alt="" class="img-circle" />
-							<h3>Rambo Deol</h3>
-							<p>Dota Player</p>
+							<img src="images/avatar m2.jpg" alt="" class="img-circle" />
+							<h3>Alejandra Quiroz</h3>
+							
 						</div>
 						<div class="quote-box">
-							<p>"i thought the designs are flexible to implement, Actually his service are quite good, truly recommended"</p>
-							<div class="q-url">
-								<a href="#" title="">www.dota.com</a>
-							</div>
+							<p>"¡Increíble servicio! Me encantó, aparte el estilo es súper original y te hacen sentir como en casa, me gusta que puedes ver películas mientras se lava tu ropa en alguna lavadora llamada "don pedro" o "la güera" jajaja deberían de poner una que se llame Alex :)"</p>
 						</div>
 					</div>
 				</div>
@@ -544,7 +641,7 @@
 	
 	 
 	<!-- BLOG SECTION -->
-	<div class="section blog pbot-main">
+	<div class="section blog pbot-main noticias">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-md-offset-3">
@@ -650,7 +747,7 @@
 		<div class="f-desc">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-logo">
 								<img src="images/LOGOTIPO_LÁVAME_MUCHO2.png" alt="" />
@@ -682,16 +779,16 @@
 										<i class="fa fa-map-marker"></i>
 									</div>
 								</a>
-								<!--
-								<a href="#" title="">
+
+								<a href="https://api.whatsapp.com/send?phone=+525571197347&text=Hola, me podrían brindar información sobre sus servicios?" target="_blank" title="">
 									<div class="item">
-										<i class="fa fa-linkedin"></i>
+										<i class="fa fa-whatsapp"></i>
 									</div>
-								</a> -->
+								</a> 
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-title">
 								<h4>Post reciente</h4>
@@ -706,13 +803,20 @@
 							</div>
 							<div class="footer-blog-item">
 								<div class="footer-blog-lead">
-									<a href="blog-1.html" title="">¿Con qué regularidad lavas las sábanas de tu cama?</a>
+									<a href="blog-2.html" title="">¿Con qué regularidad lavas las sábanas de tu cama?</a>
 								</div>
 								<div class="footer-blog-date">
 									Octubre 23, 2021
 								</div>
 							</div>
-							
+							<div class="footer-blog-item">
+								<div class="footer-blog-lead">
+									<a href="blog-3.html" title="">¡Conoce nuestra sucursal en Chalco!</a>
+								</div>
+								<div class="footer-blog-date">
+									Octubre 23, 2021
+								</div>
+							</div>
 						</div>
 					</div><!--
 					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -737,7 +841,7 @@
 							
 						</div>
 					</div>  -->
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-title">
 								<h4>Contacto</h4>
@@ -762,7 +866,7 @@
 										<div class="desc-2">:</div>
 										<div class="desc-3"><a href="mailto:support@laundryes.com" title="">lavamemucho@gmail.com</a></div>
 									</div>
-								</div><!--
+								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
 										<b class="fa fa-globe"></b>
@@ -772,16 +876,16 @@
 										<div class="desc-2">:</div>
 										<div class="desc-3">www.laundryes.com</div>
 									</div>
-								</div>-->
+								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
 										<b class="fa fa-map-marker"></b>
 									</div>
 									<div class="desc">
-										<div class="desc-1">Ubicación </div>
-										<div class="desc-2">:</div>
-										<div class="desc-3">1.- Boulevard los Héroes Chalco No. 01 <br /> San Gregorio Cuautzingo Municipio de Chalco </div>
-										<div class="desc-3">2.- Boulevard los Héroes Chalco No. 01 <br /> San Gregorio Cuautzingo Municipio de Neza </div>
+										<div class="form-group">
+											<p>¡Conoce nuestra ubicación!</p>
+											<a href="contact.html" title="" class="btn btn-default">UBÍCANOS</a>
+										</div>
 									</div>
 								</div>
 								
@@ -806,8 +910,64 @@
 		</div>
 		
 	</div>
-	
-	
+
+	<!--Cookies-->
+	<!--
+	<div id="div-cookies" style="display: none;">
+		Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+		<a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+		y la
+		<a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
+		<button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+		Acepto el uso de cookies
+		</button>
+	</div>
+		<style>
+			#div-cookies 
+			{
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				background-color: white;
+				box-shadow: 0px -5px 15px gray;
+				padding: 7px;
+				text-align: center;
+				z-index: 99;
+			}
+		</style>
+		<script>
+			function checkAcceptCookies() 
+				{
+					if (localStorage.acceptCookies == 'true') 
+						{
+							localStorage.acceptCookies = 'false'
+						} 
+					else 
+						{
+						$('#div-cookies').show();
+						$('#pop').show();
+						}
+				}
+			function deleteAllCookies() 
+				{
+
+				}
+			
+			function acceptCookies() 
+				{
+					localStorage.acceptCookies = 'true';
+					$('#div-cookies').hide();
+					$('#pop').hide();
+				}
+
+
+			$(document).ready(function() 
+				{
+					checkAcceptCookies();
+					deleteAllCookies()
+				});
+		</script>-->
 	
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -817,6 +977,10 @@
 	<script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
 	
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
+	<!--<script type="text/javascript" scr="js/ScrollReveal.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>-->
 	
+
 </body>
 </html>

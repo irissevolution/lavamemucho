@@ -42,7 +42,7 @@
 		  
 		  
 		  <script type="text/javascript" src="js/modernizr.min.js"></script>
-		  
+		  <script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
 		  
 	  
 	  </head>
@@ -138,7 +138,7 @@
 	
 	
 	<!-- ABOUT SECTION -->
-	<div class="section">
+	<div class="section stat2">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
@@ -382,7 +382,7 @@
 		<div class="f-desc">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-logo">
 								<img src="images/LOGOTIPO_LÁVAME_MUCHO2.png" alt="" />
@@ -414,16 +414,16 @@
 										<i class="fa fa-map-marker"></i>
 									</div>
 								</a>
-								<!--
-								<a href="#" title="">
+
+								<a href="https://api.whatsapp.com/send?phone=+525571197347&text=Hola, me podrían brindar información sobre sus servicios?" target="_blank" title="">
 									<div class="item">
-										<i class="fa fa-linkedin"></i>
+										<i class="fa fa-whatsapp"></i>
 									</div>
-								</a> -->
+								</a> 
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-title">
 								<h4>Post reciente</h4>
@@ -438,13 +438,20 @@
 							</div>
 							<div class="footer-blog-item">
 								<div class="footer-blog-lead">
-									<a href="blog-1.html" title="">¿Con qué regularidad lavas las sábanas de tu cama?</a>
+									<a href="blog-2.html" title="">¿Con qué regularidad lavas las sábanas de tu cama?</a>
 								</div>
 								<div class="footer-blog-date">
 									Octubre 23, 2021
 								</div>
 							</div>
-							
+							<div class="footer-blog-item">
+								<div class="footer-blog-lead">
+									<a href="blog-3.html" title="">¡Conoce nuestra sucursal en Chalco!</a>
+								</div>
+								<div class="footer-blog-date">
+									Octubre 23, 2021
+								</div>
+							</div>
 						</div>
 					</div><!--
 					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -469,7 +476,7 @@
 							
 						</div>
 					</div>  -->
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-xs-12alter col-sm-6 col-md-3 col-lg-3">
 						<div class="footer-item">
 							<div class="footer-title">
 								<h4>Contacto</h4>
@@ -494,7 +501,7 @@
 										<div class="desc-2">:</div>
 										<div class="desc-3"><a href="mailto:support@laundryes.com" title="">lavamemucho@gmail.com</a></div>
 									</div>
-								</div><!--
+								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
 										<b class="fa fa-globe"></b>
@@ -504,16 +511,16 @@
 										<div class="desc-2">:</div>
 										<div class="desc-3">www.laundryes.com</div>
 									</div>
-								</div>-->
+								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
 										<b class="fa fa-map-marker"></b>
 									</div>
 									<div class="desc">
-										<div class="desc-1">Ubicación </div>
-										<div class="desc-2">:</div>
-										<div class="desc-3">1.- Boulevard los Héroes Chalco No. 01 <br /> San Gregorio Cuautzingo Municipio de Chalco </div>
-										<div class="desc-3">2.- Boulevard los Héroes Chalco No. 01 <br /> San Gregorio Cuautzingo Municipio de Neza </div>
+										<div class="form-group">
+											<p>¡Conoce nuestra ubicación!</p>
+											<a href="contact.html" title="" class="btn btn-default">UBÍCANOS</a>
+										</div>
 									</div>
 								</div>
 								
@@ -538,9 +545,64 @@
 		</div>
 		
 	</div>
-	
-	
-	
+
+	<!--Cookies-->
+	<!--
+	<div id="div-cookies" style="display: none;">
+		Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+		<a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+		y la
+		<a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
+		<button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+		Acepto el uso de cookies
+		</button>
+	</div>
+		<style>
+			#div-cookies 
+			{
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				background-color: white;
+				box-shadow: 0px -5px 15px gray;
+				padding: 7px;
+				text-align: center;
+				z-index: 99;
+			}
+		</style>
+		<script>
+			function checkAcceptCookies() 
+				{
+					if (localStorage.acceptCookies == 'true') 
+						{
+							localStorage.acceptCookies = 'false'
+						} 
+					else 
+						{
+						$('#div-cookies').show();
+						$('#pop').show();
+						}
+				}
+			function deleteAllCookies() 
+				{
+
+				}
+			
+			function acceptCookies() 
+				{
+					localStorage.acceptCookies = 'true';
+					$('#div-cookies').hide();
+					$('#pop').hide();
+				}
+
+
+			$(document).ready(function() 
+				{
+					checkAcceptCookies();
+					deleteAllCookies()
+				});
+		</script>-->
 	
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -550,7 +612,10 @@
 	<script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
 	
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
+	<!--<script type="text/javascript" scr="js/ScrollReveal.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>-->
 	
-</body>
 
+</body>
 </html>
