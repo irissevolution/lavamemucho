@@ -19,8 +19,11 @@ $(document).ready(function(){
 
 	ScrollReveal().reveal('.navbar', slideUp);
 
-	/* */
+
+
 	
+
+
 	/* =================================
 	NAVBAR 
 	=================================== */
@@ -40,7 +43,34 @@ $(document).ready(function(){
 	=================================== */
 	/*$(".services-item-image").delay(4000).fadeOut();*/
 
-	
+	const popup = document.querySelector('.popup-wrapper');
+	const close1 = document.querySelector('.popup-close');
+
+	close1.addEventListener('click', () => {
+		popup.style.display = 'none';
+		firstName = sessionStorage.getItem('S')
+	}); 
+
+	popup.addEventListener('click', e => {
+		// console.log(e);
+		if(e.target.className === 'popup-wrapper') {
+			popup.style.display = 'none';
+			firstName='R';
+		}
+	});
+	 
+	 
+
+	 
+		/* =================================
+	Se puede quitar para que no se salga presionando fuera del texxto
+	=================================== */
+
+
+
+
+
+
 	/* =================================
 	FAQ
 	=================================== */
@@ -71,11 +101,7 @@ $(document).ready(function(){
 		});
 	}
 
-	let close_button = document.getElementById('close-button');  //Se agregó para la imagen banner
-	close_button.addEventListener("click", function(e) {
-		e.preventDefault();
-		document.getElementById("window-notice").style.display = "none";
-	});
+
 
 	if ($('#maps').length) {
 	//set your google maps parameters
