@@ -41,10 +41,11 @@ $(document).ready(function(){
 	/* =================================
 	MujerServicios
 	=================================== */
-	/*$(".services-item-image").delay(4000).fadeOut();*/
+	//$(".services-item-image").delay(4000).fadeOut();
 
 	const popup = document.querySelector('.popup-wrapper');
 	const close1 = document.querySelector('.popup-close');
+
 
 	close1.addEventListener('click', () => {
 		popup.style.display = 'none';
