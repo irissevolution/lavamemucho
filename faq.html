@@ -486,7 +486,9 @@
 										<div class="desc-1">Website </div>
 										<div class="desc-2">:</div>
 										<div class="desc-3">www.laundryes.com</div>
+
 									</div>-->
+
 								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
@@ -521,9 +523,64 @@
 		</div>
 		
 	</div>
-	
-	
-	
+
+	<!--Cookies-->
+	<!--
+	<div id="div-cookies" style="display: none;">
+		Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
+		<a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+		y la
+		<a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
+		<button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+		Acepto el uso de cookies
+		</button>
+	</div>
+		<style>
+			#div-cookies 
+			{
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				background-color: white;
+				box-shadow: 0px -5px 15px gray;
+				padding: 7px;
+				text-align: center;
+				z-index: 99;
+			}
+		</style>
+		<script>
+			function checkAcceptCookies() 
+				{
+					if (localStorage.acceptCookies == 'true') 
+						{
+							localStorage.acceptCookies = 'false'
+						} 
+					else 
+						{
+						$('#div-cookies').show();
+						$('#pop').show();
+						}
+				}
+			function deleteAllCookies() 
+				{
+
+				}
+			
+			function acceptCookies() 
+				{
+					localStorage.acceptCookies = 'true';
+					$('#div-cookies').hide();
+					$('#pop').hide();
+				}
+
+
+			$(document).ready(function() 
+				{
+					checkAcceptCookies();
+					deleteAllCookies()
+				});
+		</script>-->
 	
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -533,8 +590,10 @@
 	<script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
 	
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
+	<!--<script type="text/javascript" scr="js/ScrollReveal.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>-->
+	
 
-	
-	
 </body>
 </html>
