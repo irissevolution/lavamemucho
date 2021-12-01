@@ -222,58 +222,62 @@
 	
 	<!-- STATS SECTION FACTS --> 
 	<div class="section stat-facts" style="background:url('images/page_img-u24411-fr1.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
-		<div class="bg-overlay">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div class="stat-item">
-							<div class="icon">
-								<i class="fa fa-briefcase"></i>
+		<div class="stat-facts2">
+			<div class="bg-overlay">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="stat-item">
+								<div class="icon">
+									<i class="fa fa-briefcase"></i>
+								</div>
+								<div class="stat-title">
+									<h3 class="number">+3,000</h3>
+									<p>Clientes satisfechos</p>
+								</div>	
 							</div>
-							<div class="stat-title">
-								<h3 class="number">5</h3>
-								<p>Negocios con clientes</p>
-							</div>	
+
 						</div>
-					</div>
-					
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div class="stat-item">
-							<div class="icon">
-								<i class="fa fa-camera-retro"></i>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="stat-item">
+								<div class="icon">
+									<i class="fa fa-camera-retro"></i>
+
+								</div>
+								<div class="stat-title">
+									<h3 class="number">27</h3>
+									<p>Equipos en cada sucursal</p>
+								</div>	
 							</div>
-							<div class="stat-title">
-								<h3 class="number">25</h3>
-								<p>M&aacute;quinas de lavado</p>
-							</div>	
 						</div>
-					</div>
-					
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div class="stat-item">
-							<div class="icon">
-								<i class="fa fa-thumbs-o-up"></i>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="stat-item">
+								<div class="icon">
+									<i class="fa fa-thumbs-o-up"></i>
+								</div>
+								<div class="stat-title">
+									<h3 class="number">2,200</h3>
+									<p>Me gusta</p>
+								</div>	
 							</div>
-							<div class="stat-title">
-								<h3 class="number">116</h3>
-								<p>Me gusta</p>
-							</div>	
 						</div>
-					</div>
-					
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div class="stat-item">
-							<div class="icon">
-								<i class="fa fa-users"></i>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<div class="stat-item">
+								<div class="icon">
+									<i class="fa fa-users"></i>
+								</div>
+								<div class="stat-title">
+									<h3 class="number">5</h3>
+									<p>Sucursales</p>
+								</div>	
 							</div>
-							<div class="stat-title">
-								<h3 class="number">50</h3>
-								<p>Empleados</p>
-							</div>	
 						</div>
+						
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -503,14 +507,16 @@
 									</div>
 								</div>
 								<div class="footer-getintouch-item">
-									<div class="icon">
+									<!--<div class="icon">
 										<b class="fa fa-globe"></b>
 									</div>
 									<div class="desc">
 										<div class="desc-1">Website </div>
 										<div class="desc-2">:</div>
 										<div class="desc-3">www.laundryes.com</div>
-									</div>
+
+									</div>-->
+
 								</div>
 								<div class="footer-getintouch-item">
 									<div class="icon">
@@ -546,63 +552,19 @@
 		
 	</div>
 
-	<!--Cookies-->
-	<!--
-	<div id="div-cookies" style="display: none;">
-		Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
-		<a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
-		y la
-		<a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
-		<button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
-		Acepto el uso de cookies
-		</button>
-	</div>
-		<style>
-			#div-cookies 
-			{
-				position: fixed;
-				bottom: 0px;
-				left: 0px;
-				width: 100%;
-				background-color: white;
-				box-shadow: 0px -5px 15px gray;
-				padding: 7px;
-				text-align: center;
-				z-index: 99;
-			}
-		</style>
-		<script>
-			function checkAcceptCookies() 
-				{
-					if (localStorage.acceptCookies == 'true') 
-						{
-							localStorage.acceptCookies = 'false'
-						} 
-					else 
-						{
-						$('#div-cookies').show();
-						$('#pop').show();
-						}
-				}
-			function deleteAllCookies() 
-				{
+	
+	<script>
+		var stat2 = {
+		duration: 3000,
+		origin: 'left',
+		distance: '2000px'
+	};
 
-				}
-			
-			function acceptCookies() 
-				{
-					localStorage.acceptCookies = 'true';
-					$('#div-cookies').hide();
-					$('#pop').hide();
-				}
+	ScrollReveal().reveal('.stat2', stat2);
 
 
-			$(document).ready(function() 
-				{
-					checkAcceptCookies();
-					deleteAllCookies()
-				});
-		</script>-->
+	</script>
+
 	
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
