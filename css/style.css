@@ -163,8 +163,8 @@ body{
     left: 50%;
     margin: -100px 0 0 -100px;
     width: 200px;
-    height: 200px;
-    background-image: url("../images/apple-touch-icon52x52.jpg");
+    height: 283px;
+    background-image: url("../images/LoaderLM-1.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -653,17 +653,17 @@ p {
 	float:left;
 }
 .services-item .icon img{
-	width:80px;
-	height:80px;
+	width:100px;
+	height:100px;
 	border: 2px solid #16A085; /*camba color servicio císculos*/
 }
 .services-item.left .ket{
 	text-align:right;
-	margin-right: 100px;
+	margin-right: 110px;
 }
 .services-item.right .ket{
 	text-align:left;
-	margin-left: 100px;
+	margin-left: 110px;
 }
 .services-item.left .ket h4{
 	text-align: right;
