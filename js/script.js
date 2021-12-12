@@ -53,13 +53,16 @@ $(document).ready(function(){
 	}); 
 
 	/*popup.addEventListener('click', e => {
+
 		// console.log(e);
+
 		if(e.target.className === 'popup-wrapper') {
 			popup.style.display = 'none';
 			firstName='R';
 		}
+
 	});*/
-	 
+
 	 
 
 	 
