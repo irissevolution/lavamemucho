@@ -315,20 +315,21 @@ p {
 	margin-top: -15px;
 }
 .navbar-main .navbar-brand > img {
-	max-width: 100%;
+	max-width: 35%;
 	min-width: 0%;
 	height: auto;
-
+/* Modificas para que tenga dif porcentaje */
 
 }
 .navbar-main .nav > li > a {
     position: relative;
     display: block;
-    padding: 10px 22px;
+    padding: 37px 22px; 
+	/* Ese paddin en para cuando baja, di más espacio */
 }
 .navbar-main .navbar-nav > li > a {
 	padding-top:35px;
-	min-height: 100px;
+	min-height: 100px; /*modifica la tamaño de vertical de nav*/
 	font-size:12px;
 	line-height:22px;
 	color:#333;
@@ -1798,7 +1799,13 @@ img.redimension {
 	.navbar-main .nav > li > a {
         padding-left: 15px;
         padding-right: 15px;
+		padding-top: 0; /*Se agregaron */
+		padding-bottom: 0; 
 	}
+	.navbar-main .navbar-nav > li > a {
+		min-height: 45px; /*modifica la tamaño de vertical de nav*/
+	}
+
 }
 @media (max-width: 768px) {
 	.header-top{
@@ -1809,10 +1816,19 @@ img.redimension {
 	}
 	.navbar-brand {
 		padding: 6px 15px;
-		width: 150px;
+		width: 110px;
+	}
+	/* Agregué esto para que en disp pequeño no
+	se hiciera la imen muyy pequena */
+	.navbar-main .navbar-brand > img {
+		max-width: 100%;
+		min-width: 0%;
+		height: auto;
+	/* Modificas para que tenga dif porcentaje */
+	
 	}
 	.navbar-brand > img {   /*Se modifica para var el logo y la resulución que se necesite*/
-		width: 42%;
+		width: 60%;
 		display: block;
 	}
 	.navbar-main .navbar-brand > img {
@@ -1940,3 +1956,8 @@ img.redimension {
 		width: 80%;
 	}	
 }
+ /* @media (min-width: 990px) {
+	.navbar-main.stiky .navbar-brand > img {
+		width: 27%;
+	} 
+ }  */
