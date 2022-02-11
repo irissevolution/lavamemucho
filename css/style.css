@@ -1128,6 +1128,9 @@ p {
 	font-weight: 700;
 	padding-bottom:20px;
 	display:block;
+	text-align: center;
+	/* se agregó esta línea para centrar
+	el texto */
 }
 .post-item .post-title a:hover{
 	color: #85DBFF;
@@ -1776,6 +1779,14 @@ img.redimension {
 
 @media (max-width: 1199px) {
 	
+}
+
+@media (min-width: 1200px){
+	.image-wrap{
+		position:relative;
+		margin: 0 auto;
+		width: 80%;
+	}
 }
 @media (max-width: 992px) {
 	.info .info-item {
