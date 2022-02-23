@@ -415,10 +415,78 @@ p {
 }
 .banner .imgbg{
 	height:450px;
+
+	
+	
 }
-.banner .imgbg img{
-	display:none;
+.banner .item img{
+	/* display:none; */
+	height:450px;
+	width: 1400px;
+
+	
 }
+
+.Fix{
+height:450px;
+width: auto;
+ background:url('../images/Pagina principal .jpg');
+ /* background-image:  no-repeat; */
+ /* background:  center center;   */
+ background-position:  center center;  
+ /* -webkit-background-size: cover; 
+ -moz-background-size: cover; 
+ -o-background-size: cover;  */
+ background-size: cover;
+ margin: auto auto;
+}
+
+@media (max-width: 1000px){
+	.Fix{
+		 background-image:url('../images/banner-small.jpeg');
+		}
+	}
+.Fix2{
+	height:450px;
+	width: auto;
+		background:url('../images/Lavandería y tintoreria Lávame Mucho ¡Siempre a tu Servicio!.png');
+		/* background-image:  no-repeat; */
+		/* background:  center center;   */
+		background-position:  center center;  
+		/* -webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover;  */
+		background-size: cover;
+		margin: auto auto;
+	}
+	
+@media (max-width: 1000px){
+	.Fix2{
+			background-image:url('../images/banner-small.jpeg');
+		}
+	}
+.bord {
+	align-items: center;
+	height: 450px;
+	width: 450px;
+	/* border: 1px solid #000; */
+	/* border-radius:50%; */
+  }
+
+.bord:hover{
+
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	box-shadow: 0px 0px 15px 15px #025951;
+	-webkit-box-shadow: 0px 0px 15px 15px #025951;
+	transform: rotate(360deg) ;
+	-webkit-transform: rotate(360deg) ;
+	transition-duration: 3s;
+	
+}
+	
+}
+
 .banner .title-box h2{  /*puede cambiar color aca pero no da*/
 	text-align: left;
     font-size: 30px;
@@ -699,8 +767,8 @@ p {
 	float:left;
 }
 .services-item .icon img{
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border: 2px solid #16A085; /*camba color servicio císculos*/
 }
 .services-item.left .ket{
@@ -709,7 +777,7 @@ p {
 }
 .services-item.right .ket{
 	text-align:left;
-	margin-left: 110px;
+	margin-left: 129px;
 }
 .services-item.left .ket h4{
 	text-align: right;
@@ -762,12 +830,14 @@ p {
 	position:relative;
 	width:100%;
 	text-align:center;
+	/* display: flex; */
 }
 .services-item-image img{
 	position:absolute;
 	bottom:0;
-	left:0;
-	display: block;
+	left:30px;
+	/* align-items: center;
+	align-content: center; */
 	margin: 0 auto;
 }
 
@@ -1778,7 +1848,9 @@ img.redimension {
 
 
 @media (max-width: 1199px) {
-	
+	.services-item-image img{
+		left:0px;
+	}
 }
 
 @media (min-width: 1200px){
@@ -1787,6 +1859,7 @@ img.redimension {
 		margin: 0 auto;
 		width: 80%;
 	}
+	
 }
 @media (max-width: 992px) {
 	.info .info-item {
@@ -1795,6 +1868,7 @@ img.redimension {
 	.services-item-image img{
 		position:static;
 	}
+
 	.work-info-icon {
 		margin: 30px 0 0 0;
 		width: 100%;
@@ -1816,7 +1890,10 @@ img.redimension {
 	.navbar-main .navbar-nav > li > a {
 		min-height: 45px; /*modifica la tamaño de vertical de nav*/
 	}
-
+	.services-item .icon img{
+		width:108px;
+		height:108px;
+	}
 }
 @media (max-width: 768px) {
 	.header-top{
