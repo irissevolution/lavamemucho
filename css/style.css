@@ -230,6 +230,17 @@ a:hover {
 	padding: 6px 35px;
 	font-weight:bold;
 }
+
+.btn-defaultContac {
+    color: #333;
+    background-color: #16A085 ;
+    border-color: #16A085 ;
+	border-radius: 0;
+	color:#fff;
+	padding: 6px 20px;
+	font-weight:bold;
+}
+
 .btn-default:hover {
     background-color: #FBA301;
     border-color: #FBA301;
@@ -252,6 +263,8 @@ a:hover {
 .pos-relative{
 	position:relative;
 }
+
+
 .page-title{
 	text-align:center;
 	margin-bottom: 80px;
@@ -264,6 +277,8 @@ a:hover {
     font-family: raleway, sans-serif;
     font-weight: 700;
 }
+
+
 .page-title .sublead{
 	font-size: 14px;
     color: #666666;
@@ -466,26 +481,99 @@ width: auto;
 		}
 	}
 .bord {
-	align-items: center;
-	height: 450px;
-	width: 450px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	/* overflow: hidden; */
+	/* height: 450px;
+	width: 450px; */
+
 	/* border: 1px solid #000; */
 	/* border-radius:50%; */
+	/* animation: rotation 2s 3s linear; */
+
   }
 
 .bord:hover{
+	/* width: 200px;
+	height: 200px; */
+	animation: rotation 10s infinite linear;
+	/* border-radius:50%;
+	-webkit-border-radius:50%; */
+	/* box-shadow: 0px 0px 15px 15px #025951;
+	-webkit-box-shadow: 0px 0px 15px 15px #025951; */
+	/* width: auto;
+	height: 100%; */
+	clip-path: circle(180px at center);
+}
+
+.container2 {
+	margin: 0px 4px 35px 0;
+	display: flex;
+	background-color: transparent;
+	flex-direction: column;
+	width: auto;
+	background: cover;
+	border: 3px solid #000;
+	padding: 10px;
+	
+}
+
+.contIns{
+
+	align-items: center;
+	justify-items: center;
+	color: #000;
+}
+
+.separa{
+	
+	display: flex;
+	flex-direction: row;
+	line-height: 20pt;        /* para la separacion entre lineas */ 
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid #000;
+	padding: 5px 40px;
+	/* background-color: #0071BC; */
+}
+
+.separa div {
+	/* background-color: #027368; */
+	width: auto;
+	height: auto;
+	padding: 4px 6px;
+  }
+
+.contac-word {
+	font-size: 30px;
+    color: #16A085  ; /*sE CAMBI� #0071BC POR ESTE #63b1a9  */
+    line-height: 34px;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+/* .bord:focus-visible{
 
 	border-radius:50%;
 	-webkit-border-radius:50%;
 	box-shadow: 0px 0px 15px 15px #025951;
 	-webkit-box-shadow: 0px 0px 15px 15px #025951;
-	transform: rotate(360deg) ;
-	-webkit-transform: rotate(360deg) ;
+	transform: rotate(60deg) ;
+	-webkit-transform: rotate(60deg) ;
 	transition-duration: 3s;
 	
 }
-	
-}
+	 */
 
 .banner .title-box h2{  /*puede cambiar color aca pero no da*/
 	text-align: left;
@@ -731,10 +819,15 @@ width: auto;
 }
 .about-img{
 	margin-bottom:20px;
+	position: sticky;
 }
 .about-img img{
 	margin-left:auto;
 	margin-right:auto;
+	
+	/* border: 3px solid #16A085; */
+	/* box-shadow:  5px 5px 5px #16A085; */
+	
 }
 .about-wrap{
 	margin-left:20px;
@@ -1686,18 +1779,31 @@ p.help-block.text-danger li {
 /* Start: Google Maps Responsive */
 
 .map-responsive {
+	margin-top: 50px;
     overflow:hidden;
     padding-bottom:67%; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
     position:relative;
     height:0;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+/* @media (max-width:){
+.map-responsive{
+
 }
+} */
+
+@media (max-width:1991px){
+	.map-responsive{
+		margin-top: 35px;
+	}
+	}
+
+@media (max-width:1200px){
+	.map-responsive{
+		margin-top: 100px ;
+	}
+	}
+
 /* End: Google Maps Responsive */
 
 img.redimension {
@@ -1862,11 +1968,17 @@ img.redimension {
 	
 }
 @media (max-width: 992px) {
+
+	.map-responsive{
+		margin-top: 0px;
+	}
+
 	.info .info-item {
 		margin-right: 20px;
 	}
 	.services-item-image img{
-		position:static;
+		position:relative;
+
 	}
 
 	.work-info-icon {
