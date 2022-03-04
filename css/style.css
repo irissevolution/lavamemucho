@@ -202,10 +202,33 @@ body{
     z-index: 999999;
     background-color: #fff;
 }
+
+.animationload2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: #fff;
+}
+
 .loader {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 283px;
+    background-image: url("../images/LoaderLM-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loader2 {
+    position: absolute;
+    top: 40%;
+    left: 44%;
     margin: -100px 0 0 -100px;
     width: 200px;
     height: 283px;
@@ -369,6 +392,9 @@ p {
 	background-color:#F8F8F8;
 }
 .navbar-toggle .icon-bar {
+    background-color: #16A085;
+}
+.navbar-toggle2 .icon-bar {
     background-color: #16A085;
 }
 .dropdown-menu {
