@@ -572,6 +572,29 @@ width: auto;
 	padding: 4px 6px;
   }
 
+.ocultar-div{
+	display: block;
+	/* visibility: hidden; */
+	}
+
+@media screen and (max-width: 991px) {
+	.ocultar-div{
+	display:none;
+	}
+	}
+
+.ocultar-div2{
+	display: block;
+	/* visibility: hidden; */
+	}
+
+@media screen and (min-width: 992px) {
+	.ocultar-div2{
+	display:none;
+	}
+	}
+
+
 .contac-word {
 	font-size: 30px;
     color: #16A085  ; /*sE CAMBI� #0071BC POR ESTE #63b1a9  */
