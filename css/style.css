@@ -484,7 +484,7 @@ width: auto;
 
 @media (max-width: 1000px){
 	.Fix{
-		 background-image:url('../images/banner-small.jpeg');
+		 background-image:url('../images/banner-small.jpg');
 		}
 	}
 .Fix2{
@@ -503,7 +503,7 @@ width: auto;
 	
 @media (max-width: 1000px){
 	.Fix2{
-			background-image:url('../images/banner-small.jpeg');
+			background-image:url('../images/banner-small-promo.jpg');
 		}
 	}
 .bord {
