@@ -88,8 +88,8 @@ $(document).ready(function(){
 
 
 	close1.addEventListener('click', () => {
-		popup.style.display = 'none';
-		firstName = sessionStorage.getItem('S')
+	popup.style.display = 'none';
+	firstName = sessionStorage.getItem('S')
 	}); 
 
 	/*popup.addEventListener('click', e => {

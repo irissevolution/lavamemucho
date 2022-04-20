@@ -202,10 +202,33 @@ body{
     z-index: 999999;
     background-color: #fff;
 }
+
+.animationload2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: #fff;
+}
+
 .loader {
     position: absolute;
     top: 50%;
     left: 50%;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 283px;
+    background-image: url("../images/LoaderLM-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loader2 {
+    position: absolute;
+    top: 40%;
+    left: 44%;
     margin: -100px 0 0 -100px;
     width: 200px;
     height: 283px;
@@ -230,6 +253,17 @@ a:hover {
 	padding: 6px 35px;
 	font-weight:bold;
 }
+
+.btn-defaultContac {
+    color: #333;
+    background-color: #16A085 ;
+    border-color: #16A085 ;
+	border-radius: 0;
+	color:#fff;
+	padding: 6px 20px;
+	font-weight:bold;
+}
+
 .btn-default:hover {
     background-color: #FBA301;
     border-color: #FBA301;
@@ -252,6 +286,8 @@ a:hover {
 .pos-relative{
 	position:relative;
 }
+
+
 .page-title{
 	text-align:center;
 	margin-bottom: 80px;
@@ -264,6 +300,8 @@ a:hover {
     font-family: raleway, sans-serif;
     font-weight: 700;
 }
+
+
 .page-title .sublead{
 	font-size: 14px;
     color: #666666;
@@ -356,6 +394,9 @@ p {
 .navbar-toggle .icon-bar {
     background-color: #16A085;
 }
+.navbar-toggle2 .icon-bar {
+    background-color: #16A085;
+}
 .dropdown-menu {
 	border:0;
     border-bottom: 4px solid #16A085;
@@ -415,10 +456,174 @@ p {
 }
 .banner .imgbg{
 	height:450px;
+
+	
+	
 }
-.banner .imgbg img{
+.banner .item img{
+	/* display:none; */
+	height:450px;
+	width: 1400px;
+
+	
+}
+
+.Fix{
+height:450px;
+width: auto;
+ background:url('../images/Pagina principal .jpg');
+ /* background-image:  no-repeat; */
+ /* background:  center center;   */
+ background-position:  center center;  
+ /* -webkit-background-size: cover; 
+ -moz-background-size: cover; 
+ -o-background-size: cover;  */
+ background-size: cover;
+ margin: auto auto;
+}
+
+@media (max-width: 1000px){
+	.Fix{
+		 background-image:url('../images/banner-small.jpeg');
+		}
+	}
+.Fix2{
+	height:450px;
+	width: auto;
+		background:url('../images/Lavandería y tintoreria Lávame Mucho ¡Siempre a tu Servicio!.png');
+		/* background-image:  no-repeat; */
+		/* background:  center center;   */
+		background-position:  center center;  
+		/* -webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover;  */
+		background-size: cover;
+		margin: auto auto;
+	}
+	
+@media (max-width: 1000px){
+	.Fix2{
+			background-image:url('../images/banner-small.jpeg');
+		}
+	}
+.bord {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	/* overflow: hidden; */
+	/* height: 450px;
+	width: 450px; */
+
+	/* border: 1px solid #000; */
+	/* border-radius:50%; */
+	/* animation: rotation 2s 3s linear; */
+
+  }
+
+.bord:hover{
+	/* width: 200px;
+	height: 200px; */
+	animation: rotation 10s infinite linear;
+	/* border-radius:50%;
+	-webkit-border-radius:50%; */
+	/* box-shadow: 0px 0px 15px 15px #025951;
+	-webkit-box-shadow: 0px 0px 15px 15px #025951; */
+	/* width: auto;
+	height: 100%; */
+	clip-path: circle(180px at center);
+}
+
+.container2 {
+	margin: 0px 4px 35px 0;
+	display: flex;
+	background-color: transparent;
+	flex-direction: column;
+	width: auto;
+	background: cover;
+	border: 3px solid #000;
+	padding: 10px;
+	
+}
+
+.contIns{
+
+	align-items: center;
+	justify-items: center;
+	color: #000;
+}
+
+.separa{
+	
+	display: flex;
+	flex-direction: row;
+	line-height: 20pt;        /* para la separacion entre lineas */ 
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid #000;
+	padding: 5px 40px;
+	/* background-color: #0071BC; */
+}
+
+.separa div {
+	/* background-color: #027368; */
+	width: auto;
+	height: auto;
+	padding: 4px 6px;
+  }
+
+.ocultar-div{
+	display: block;
+	/* visibility: hidden; */
+	}
+
+@media screen and (max-width: 991px) {
+	.ocultar-div{
 	display:none;
+	}
+	}
+
+.ocultar-div2{
+	display: block;
+	/* visibility: hidden; */
+	}
+
+@media screen and (min-width: 992px) {
+	.ocultar-div2{
+	display:none;
+	}
+	}
+
+
+.contac-word {
+	font-size: 30px;
+    color: #16A085  ; /*sE CAMBI� #0071BC POR ESTE #63b1a9  */
+    line-height: 34px;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
 }
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+/* .bord:focus-visible{
+
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	box-shadow: 0px 0px 15px 15px #025951;
+	-webkit-box-shadow: 0px 0px 15px 15px #025951;
+	transform: rotate(60deg) ;
+	-webkit-transform: rotate(60deg) ;
+	transition-duration: 3s;
+	
+}
+	 */
+
 .banner .title-box h2{  /*puede cambiar color aca pero no da*/
 	text-align: left;
     font-size: 30px;
@@ -663,10 +868,15 @@ p {
 }
 .about-img{
 	margin-bottom:20px;
+	position: sticky;
 }
 .about-img img{
 	margin-left:auto;
 	margin-right:auto;
+	
+	/* border: 3px solid #16A085; */
+	/* box-shadow:  5px 5px 5px #16A085; */
+	
 }
 .about-wrap{
 	margin-left:20px;
@@ -699,8 +909,8 @@ p {
 	float:left;
 }
 .services-item .icon img{
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border: 2px solid #16A085; /*camba color servicio císculos*/
 }
 .services-item.left .ket{
@@ -709,7 +919,7 @@ p {
 }
 .services-item.right .ket{
 	text-align:left;
-	margin-left: 110px;
+	margin-left: 129px;
 }
 .services-item.left .ket h4{
 	text-align: right;
@@ -762,12 +972,14 @@ p {
 	position:relative;
 	width:100%;
 	text-align:center;
+	/* display: flex; */
 }
 .services-item-image img{
 	position:absolute;
 	bottom:0;
-	left:0;
-	display: block;
+	left:30px;
+	/* align-items: center;
+	align-content: center; */
 	margin: 0 auto;
 }
 
@@ -1616,18 +1828,31 @@ p.help-block.text-danger li {
 /* Start: Google Maps Responsive */
 
 .map-responsive {
+	margin-top: 50px;
     overflow:hidden;
     padding-bottom:67%; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
     position:relative;
     height:0;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+/* @media (max-width:){
+.map-responsive{
+
 }
+} */
+
+@media (max-width:1991px){
+	.map-responsive{
+		margin-top: 35px;
+	}
+	}
+
+@media (max-width:1200px){
+	.map-responsive{
+		margin-top: 100px ;
+	}
+	}
+
 /* End: Google Maps Responsive */
 
 img.redimension {
@@ -1778,7 +2003,9 @@ img.redimension {
 
 
 @media (max-width: 1199px) {
-	
+	.services-item-image img{
+		left:0px;
+	}
 }
 
 @media (min-width: 1200px){
@@ -1787,14 +2014,22 @@ img.redimension {
 		margin: 0 auto;
 		width: 80%;
 	}
+	
 }
 @media (max-width: 992px) {
+
+	.map-responsive{
+		margin-top: 0px;
+	}
+
 	.info .info-item {
 		margin-right: 20px;
 	}
 	.services-item-image img{
-		position:static;
+		position:relative;
+
 	}
+
 	.work-info-icon {
 		margin: 30px 0 0 0;
 		width: 100%;
@@ -1816,7 +2051,10 @@ img.redimension {
 	.navbar-main .navbar-nav > li > a {
 		min-height: 45px; /*modifica la tamaño de vertical de nav*/
 	}
-
+	.services-item .icon img{
+		width:108px;
+		height:108px;
+	}
 }
 @media (max-width: 768px) {
 	.header-top{

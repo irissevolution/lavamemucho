@@ -46,6 +46,8 @@
 </head>
 
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	
 	<!-- Load page -->
 	<div class="animationload">
@@ -54,10 +56,10 @@
 	
 	
 	<!-- NAVBAR SECTION -->
-	<div class="navbar navbar-main navbar-fixed-top">
+	<div class="navbar navbar-main navbar-fixed-top" id="close-button">
 		<div class="header-top">
 			<div class="container">
-				<div class="row">
+				<div class="row ">
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
 						<div class="info">
 							<div class="info-item">
@@ -76,7 +78,7 @@
 					<!--	<a href="#" title=""><span class="fa fa-twitter"></span></a>
 							<a href="#" title=""><span class="fa fa-pinterest"></span></a> -->
 							<a href="https://www.instagram.com/lavamemucho/" target="_blank" title=""><span class="fa fa-instagram"></span></a>
-							<a href="https://maps.app.goo.gl/NgvuJZFASPAQPzXq9" target="_blank" title=""><span class="fa fa-map-marker"></span></a>
+							<!-- <a href="htStps://maps.app.goo.gl/NgvuJZFASPAQPzXq9" target="_blank" title=""><span class="fa fa-map-marker"></span></a> -->
 							<a href="https://api.whatsapp.com/send?phone=+525571197347&text=Hola, me podrían brindar información sobre sus servicios?" target="_blank" title=""><span class="fa fa-whatsapp"></span></a>
 						</div>
 					</div>
@@ -91,14 +93,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index2.html">
-					<img src="images/logo_blue5.jpg"  alt=""  />
-				</a>
+				<a class="navbar-brand" href="index2.html"><img src="images/logo_blue5.jpg"  alt="" /></a>
 				
 			</div>
 			
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right"><!--
+			<div class="navbar-collapse collapse ">
+				<ul class="nav navbar-nav navbar-right "><!--
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
 					  <ul class="dropdown-menu">
@@ -145,11 +145,8 @@
 			<div class="chalco">
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<div class="page-title">
-							
-								<h2 class="lead">¡VIS&Iacute;TANOS EN NUESTRA SUCURSAL CHALCO!</h2>
-							
-
+						<div class="page-title">					
+								<h2 class="lead">¡VIS&Iacute;TANOS EN NUESTRAS SUCURSALES!</h2>
 						</div>
 					</div>
 				</div>
@@ -158,13 +155,58 @@
 				<div class="row pbot-main">
 				
 					<div class="col-xs-12 col-md-6">
-						<div class="about-img">
+						<!-- <div class="about-img">
 							<img src="images/about_history-u24541-fr.jpg" alt="" class="img-responsive" />
+						</div> -->
+						<div class="container2">
+							<!-- <div class="contIns"> -->
+								<div class="separa">
+									<div>
+										<p class="contac-word">Sucursal Chalco</p>
+										<p>Tel. 5571197347</p>
+										<p>Lunes a domingo de 7:00 a 22:00</p>
+									</div>
+									<div class="ocultar-div2">
+										<a  href="#myImage" onclick="Chal()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div>
+									<div class="ocultar-div">
+										<a   onclick="Chal()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div> 
+								</div>
+
+								<div class="separa">
+									<div>
+										<p class="contac-word">Sucursal Ecatepec</p>
+										<p>Tel. Pendiente</p>
+										<p>Lunes a domingo de 7:00 a 22:00</p>
+									</div>
+									<div class="ocultar-div2">
+										<a href="#myImage" onclick="Eca()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div>
+									<div class="ocultar-div">
+										<a  onclick="Eca()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div>
+								</div>
+
+								<div class="separa" >
+									<div>
+										<p class="contac-word">Sucursal Aragón</p>
+										<p>Tel. 5557111845</p>
+										<p>Lunes a domingo de 7:00 a 22:00</p>
+									</div>
+									<div class="ocultar-div2">
+										<a href="#myImage" onclick="Ara()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div>
+									<div class="ocultar-div">
+										<a onclick="Ara()" title="" class="btn btn-defaultContac">MAPA</a>
+									</div>
+								</div>
+							<!-- </div> -->
 						</div>
 					</div>		
-					<div class="col-xs-12 col-md-6">			
-						<div class="map-responsive">
-							<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.80032886111314!2d-98.85311265981753!3d19.264849281600902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a6ab6667d285163!2sLavame%20Mucho%20Lavanderias!5e0!3m2!1ses-419!2smx!4v1635567709592!5m2!1ses-419!2smx" width="580" height="380" frameborder="0" style="border:0" tabindex="0" allowfullscreen="allowfullscreen" aria-hidden="false" ></iframe>
+					<div  class="col-xs-12 col-md-6">			
+						<div class="map-responsive" >
+							<iframe id="myImage"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.80032886111314!2d-98.85311265981753!3d19.264849281600902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a6ab6667d285163!2sLavame%20Mucho%20Lavanderias!5e0!3m2!1ses-419!2smx!4v1635567709592!5m2!1ses-419!2smx" width="580" height="380" frameborder="0" style="border:0" tabindex="0" allowfullscreen="allowfullscreen" aria-hidden="false" ></iframe>
 						</div>
 						
 						<!--
@@ -207,146 +249,18 @@
 				</div>
 			</div>
 
-			<div class="aca">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
-						<div class="page-title">
-							<h2 class="lead">¡VIS&Iacute;TANOS EN NUESTRA SUCURSAL ECATEPEC!</h2>
 
-						</div>
-					</div>
-				</div>
-				<div class="row pbot-main">
-				
-					<div class="col-xs-12 col-md-6">
-						<div class="about-img">
-							<img src="images/ecatepec.jpg" alt="" class="img-responsive" />
-						</div>
-					</div>		
-					<div class="col-xs-12 col-md-6">			
-						<div class="map-responsive">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.0682318157556!2d-99.04342778509094!3d19.58157728679974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f1b36fa93f0f%3A0x4131b98233216f06!2sLittle%20Caesars%20Pizza!5e0!3m2!1ses!2smx!4v1637274050595!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</div><!--
-						<div class="maps-wraper">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.80032886111314!2d-98.85311265981753!3d19.264849281600902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a6ab6667d285163!2sLavame%20Mucho%20Lavanderias!5e0!3m2!1ses-419!2smx!4v1635567709592!5m2!1ses-419!2smx" width="580" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-							580x380
-						</div>-->
-						<!--
-						<div class="row contact-address">
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">ADDRESS 1</div>
-									<p>
-									180 Sukarajin Street, Pekanbaru <br />
-									40021 Riau. <br />
-									Indonesia.<br /><br />
-									Phone : +62 7144 3311
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">ADDRESS 2</div>
-									<p>
-									45 Embunpagi Street, Pekanbaru<br />
-									40021 Riau. <br />
-									Indonesia.<br /><br />
-									Phone : +62 7144 3300
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">OPENING HOURS</div>
-									<p>
-									Monday - Friday : 09:00 - 20:00 pm<br />
-									Saturday : 09:00 - 17:00
-									</p>
-								</div>
-							</div>
-							
-						</div> 
-						-->
-					</div>		
-				</div>	
-			</div>
 
-			<div class="ara">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
-						<div class="page-title">
-							<h2 class="lead">¡VIS&Iacute;TANOS EN NUESTRA SUCURSAL ARAGON!</h2>
-
-							<!-- <p class="sublead">This template is designed with a unique and simple, so that it can promote and laundry business solution.</p> -->
-
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="row pbot-main">
-				
-					<div class="col-xs-12 col-md-6">
-						<div class="about-img">
-							<img src="images/aragon.jpg" alt="" class="img-responsive" />
-						</div>
-					</div>		
-					<div class="col-xs-12 col-md-6">			
-						<div class="map-responsive">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.4422185605104!2d-99.0675223850926!3d19.479601186857675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fbeed9aefcf9%3A0xb7a5a8aa76170135!2sCENTRO%20COMERCIAL%20PUERTA%20ARAG%C3%93N!5e0!3m2!1ses!2smx!4v1637274394886!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</div>
-						
-						<!--
-						<div class="row contact-address">
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">ADDRESS 1</div>
-									<p>
-									180 Sukarajin Street, Pekanbaru <br />
-									40021 Riau. <br />
-									Indonesia.<br /><br />
-									Phone : +62 7144 3311
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">ADDRESS 2</div>
-									<p>
-									45 Embunpagi Street, Pekanbaru<br />
-									40021 Riau. <br />
-									Indonesia.<br /><br />
-									Phone : +62 7144 3300
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6">
-								<div class="contact-address-item">
-									<div class="contact-address-heading">OPENING HOURS</div>
-									<p>
-									Monday - Friday : 09:00 - 20:00 pm<br />
-									Saturday : 09:00 - 17:00
-									</p>
-								</div>
-							</div>
-							
-						</div> 
-						-->
-					</div>		
-				</div>
-			</div>
-
-			<div class="extr">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
-						<div class="page-title">
-							<h2 class="lead">¡PRÓXIMAMENTE NUEVAS SUCURSALES EN IZTAPALAPA Y CUAHUTÉMOC!</h2>
-							<!--<p class="sublead"></p>-->
-						</div>
+		</div>
+		<div class="extr">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="page-title">
+						<h2 class="lead">¡PRÓXIMAMENTE NUEVAS SUCURSALES EN IZTAPALAPA Y CUAHUTÉMOC!</h2>
+						<!--<p class="sublead"></p>-->
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	
@@ -539,6 +453,7 @@
 	<!-- sendmail -->
 	<script type="text/javascript" src="js/validator.min.js"></script>
 	<script type="text/javascript" src="js/form-scripts.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>

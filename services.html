@@ -39,8 +39,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	
 	
-    <script type="text/javascript" src="js/modernizr.min.js"></script>
-	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
+     <script type="text/javascript" src="js/modernizr.min.js"></script>
+	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script> 
+
+	<!--==============================================Transitions
+	=============================================== -->	
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 </head>
 
@@ -48,15 +52,15 @@
 	
 	<!-- Load page -->
 	<div class="animationload">
-		<div class="loader"></div>
+		<div class="loader2"></div>
 	</div>
 	
 	
 	<!-- NAVBAR SECTION -->
-	<div class="navbar navbar-main navbar-fixed-top">
-		<div class="header-top">
+	<div class="navbar navbar-main navbar-fixed-top ">
+		<div class="header-top ">
 			<div class="container">
-				<div class="row">
+				<div class="row ">
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
 						<div class="info">
 							<div class="info-item">
@@ -75,7 +79,7 @@
 					<!--	<a href="#" title=""><span class="fa fa-twitter"></span></a>
 							<a href="#" title=""><span class="fa fa-pinterest"></span></a> -->
 							<a href="https://www.instagram.com/lavamemucho/" target="_blank" title=""><span class="fa fa-instagram"></span></a>
-							<a href="https://maps.app.goo.gl/NgvuJZFASPAQPzXq9" target="_blank" title=""><span class="fa fa-map-marker"></span></a>
+							<!-- <a href="https://maps.app.goo.gl/NgvuJZFASPAQPzXq9" target="_blank" title=""><span class="fa fa-map-marker"></span></a> -->
 							<a href="https://api.whatsapp.com/send?phone=+525571197347&text=Hola, me podrían brindar información sobre sus servicios?"  target="_blank" title=""><span class="fa fa-whatsapp"></span></a>
 						</div>
 					</div>
@@ -83,9 +87,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<div class="container ">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle2" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -93,7 +97,7 @@
 				<a class="navbar-brand" href="index2.html"><img src="images/logo_blue5.jpg" alt="" /></a>
 				
 			</div>
-			<div class="navbar-collapse collapse">
+			<div class="navbar-collapse collapse ">
 				<ul class="nav navbar-nav navbar-right"><!--
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
@@ -116,7 +120,7 @@
 
  
 	<!-- BANNER -->
-	<div class="section subbanner" style="background:url('images/BAux.jpg') no-repeat center center;   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+	<div class="section subbanner " style="background:url('images/BAux.jpg') no-repeat center center;   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%;">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -140,7 +144,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
 					<div class="page-title">
-						<h2 class="lead">SERVICIOS</h2>
+						<h2 class="lead" >SERVICIOS</h2>
 						
 					</div>
 				</div>
@@ -153,19 +157,20 @@
 					<div class="It1">
 						<div class="col-xs-12 col-md-6">
 							<div class="about-img">
-								<img src="images/servicio. LAVADO1.jpg" alt="" class="img-responsive" />
+								<!-- <img  src="images/Servicios/Lavado-3.JPG" alt="" data-aos="fade-down" data-aos-delay="1200" class="img-responsive" /> -->
+								<img data-aos="zoom-in-right" data-aos-delay="1200" src="images/Servicios/Lavado-3-7.jpg" alt="" class="bord" />
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-6">
 							<div class="desc-wrap">
-								<h4 class="title-page">LAVADO</h4>
-								<p>Tenemos un excelente servicio de lavado el cual puede ser “si te echamos una manita” o “si lo haces tú mismo”, el cual te libera de los largos tiempos de lavado, haciendo que disfrutes de esta experiencia.</p>
+								<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">LAVADO</h4>
+								<p data-aos="fade-down-right" data-aos-duration="9000">Tenemos un excelente servicio de lavado el cual puede ser “si te echamos una manita” o “si lo haces tú mismo”, el cual te libera de los largos tiempos de lavado, haciendo que disfrutes de esta experiencia.</p>
 								<ul class="service-list">
-									<li><i class="fa fa-check-circle"></i> Ahorro de tiempo</li>
-									<li><i class="fa fa-check-circle"></i> Comodidad</li>
-									<li><i class="fa fa-check-circle"></i> Precios accesibles</li>
-									<li><i class="fa fa-check-circle"></i> Asesoramiento de personal capacitado</li>
-									<li><i class="fa fa-check-circle"></i> Lavadoras con gran capacidad</li>
+									<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Ahorro de tiempo</li>
+									<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Comodidad</li>
+									<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Precios accesibles</li>
+									<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Asesoramiento de personal capacitado</li>
+									<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Lavadoras con gran capacidad</li>
 								</ul>
 							</div>
 						</div>
@@ -177,21 +182,25 @@
 				<div class="services-item-full It2">
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">SECADO</h4>
-							<p>Tienes la opción de utilizar el servicio de secado en el cual te ofrecemos una secadora con capacidad de 20kg. De esta forma no necesitas tender tu ropa al sol y maltratarla, cuidas tu ropa y ahorra tiempo para invertirlo con tus seres queridos.</p>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">SECADO</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Tienes la opción de utilizar el servicio de secado en el cual te ofrecemos una secadora con capacidad de 20kg. De esta forma no necesitas tender tu ropa al sol y maltratarla, cuidas tu ropa y ahorra tiempo para invertirlo con tus seres queridos.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> En 15 minutos está lista tu ropa</li>
-								<li><i class="fa fa-check-circle"></i> Tu ropa sale completamente seca y lista para ser usada</li>
-								<li><i class="fa fa-check-circle"></i> Sale sin arrugas.</li>
-								<li><i class="fa fa-check-circle"></i> Doblado fácil</li>
-								<li><i class="fa fa-check-circle"></i> Lista para guardar</li>
-								<li><i class="fa fa-check-circle"></i> Hace el planchado más fácil</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> En 15 minutos está lista tu ropa</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Tu ropa sale completamente seca y lista para ser usada</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Sale sin arrugas.</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Doblado fácil</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Lista para guardar</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Hace el planchado más fácil</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.SECADO1.2.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/Secado-1-E2.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
+							<!-- <div data-aos="zoom-in-right"  data-aos-delay="1200">
+								<img src="images/Servicios/Secado-1.JPG" alt="" class="img-responsive"  />
+							</div> -->
+							
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -201,19 +210,19 @@
 				<div class="services-item-full It3" >
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/planchaR.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/RentaDePlancha-1-2-E.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">RENTA DE PLANCHA</h4>
-							<p>SI LO HACES TÚ: Te ofrecemos la renta de una plancha y el espacio necesario, para poder planchar y doblar tu ropa fácilmente.</p>
-							<p>SI TE ECHAMOS UNA MANITA: Nosotros te ayudamos a plancharla y doblarla, para que te la puedas llevar a tu casa lista.</p>
+							<h4 data-aos="zoom-out" data-aos-duration="1000" class="title-page">RENTA DE PLANCHA</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">SI LO HACES TÚ: Te ofrecemos la renta de una plancha y el espacio necesario, para poder planchar y doblar tu ropa fácilmente.</p>
+							<p data-aos="fade-down-right" data-aos-duration="9000">SI TE ECHAMOS UNA MANITA: Nosotros te ayudamos a plancharla y doblarla, para que te la puedas llevar a tu casa lista.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Espacio dedicado para el planchado</li>
-								<li><i class="fa fa-check-circle"></i> Fácil y sencillo</li>
-								<li><i class="fa fa-check-circle"></i> Entrega inmediata de la ropa planchada y doblada</li>
-								<li><i class="fa fa-check-circle"></i> Entrega sin arrugas</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Espacio dedicado para el planchado</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Fácil y sencillo</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Entrega inmediata de la ropa planchada y doblada</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Entrega sin arrugas</li>
 							</ul>
 						</div>
 					</div>
@@ -225,20 +234,20 @@
 				<div class="services-item-full It4">
 						<div class="col-xs-12 col-md-6">
 							<div class="desc-wrap">
-								<h4 class="title-page">CAFETER&Iacute;A</h4>
-								<p>El servicio de cafetería está disponible todo el día, en el cual podrás encontrar snacks de marcas reconocidas; sopas instantáneas, galletas, pan, frituras, dulces, refrescos, juegos y un sabroso café recién hecho.</p>
-								<p>¿Se te olvidó algún producto para poder lavar tu ropa? ¡No te preocupes! Aquí te brindamos todos los productos necesarios de diversas marcas para el cuidado de tus prendas.</p>
+								<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000" class="title-page">CAFETER&Iacute;A</h4>
+								<p data-aos="fade-down-right" data-aos-duration="9000">El servicio de cafetería está disponible todo el día, en el cual podrás encontrar snacks de marcas reconocidas; sopas instantáneas, galletas, pan, frituras, dulces, refrescos, juegos y un sabroso café recién hecho.</p>
+								<p data-aos="fade-down-right" data-aos-duration="9000">¿Se te olvidó algún producto para poder lavar tu ropa? ¡No te preocupes! Aquí te brindamos todos los productos necesarios de diversas marcas para el cuidado de tus prendas.</p>
 								<ul class="service-list">
-									<li><i class="fa fa-check-circle"></i> Snacks en cualquier momento</li>
-									<li><i class="fa fa-check-circle"></i> Un sabroso café</li>
-									<li><i class="fa fa-check-circle"></i> Los mejores productos de limpieza para tus prendas</li>
-									<li><i class="fa fa-check-circle"></i> Estancia confortable</li>
+									<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Snacks en cualquier momento</li>
+									<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Un sabroso café</li>
+									<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Los mejores productos de limpieza para tus prendas</li>
+									<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Estancia confortable</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-6">
 							<div class="about-img">
-								<img src="images/servicio.CAFETERIA2.jpg" alt="" class="img-responsive" />
+								<img src="images/Servicios/Cafeteria-2-E.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 							</div>
 						</div>
 						
@@ -250,19 +259,19 @@
 				<div class="services-item-full It5">
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.JUEGOS.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/ZonaRecreativa-1-E.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 				
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">ZONA RECREATIVA</h4>
-							<p>Ofrecemos juegos de mesa para que puedas disfrutar un cálido momento con tu familia mientras esperas tu ropa. Los juegos que tenemos son: ajedrez, dominó, juegos de blocks, juego de destreza entre otros.</p>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">ZONA RECREATIVA</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Ofrecemos juegos de mesa para que puedas disfrutar un cálido momento con tu familia mientras esperas tu ropa. Los juegos que tenemos son: ajedrez, dominó, juegos de blocks, juego de destreza entre otros.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i>  Gran variedad de juegos de mesa</li>
-								<li><i class="fa fa-check-circle"></i> Una estancia confortable y limpia</li>
-								<li><i class="fa fa-check-circle"></i> Ambiente familiar</li>
-								<li><i class="fa fa-check-circle"></i>  Televisión de cable</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i>  Gran variedad de juegos de mesa</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Una estancia confortable y limpia</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Ambiente familiar</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i>  Televisión de cable</li>
 							</ul>
 						</div>
 					</div>
@@ -275,20 +284,20 @@
 				<div class="services-item-full It6">
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">SI LO HACES TÚ</h4>
-							<p>Puedes realizar tú mismo el lavado de tus prendas en alguna de nuestras lavadoras (chica, mediana, grande y jumbo) y secadoras al tener tu servicio listo en 1 hora para disfrutar más de tu vida y tus seres queridos.</p>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">SI LO HACES TÚ</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Puedes realizar tú mismo el lavado de tus prendas en alguna de nuestras lavadoras (chica, mediana, grande y jumbo) y secadoras al tener tu servicio listo en 1 hora para disfrutar más de tu vida y tus seres queridos.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Ahorro de tiempo</li>
-								<li><i class="fa fa-check-circle"></i>Cuidamos tu economía</li>
-								<li><i class="fa fa-check-circle"></i> En menos de una 1 hora limpia y seca</li>
-								<li><i class="fa fa-check-circle"></i> Fácil operación</li>
-								<li><i class="fa fa-check-circle"></i> Asesoramiento todo el tiempo</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Ahorro de tiempo</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i>Cuidamos tu economía</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> En menos de una 1 hora limpia y seca</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Fácil operación</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Asesoramiento todo el tiempo</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.AUTOSERVICIO.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/SiLoHacesTu-1-E2.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 					
@@ -299,18 +308,18 @@
 				<div class="services-item-full It7">
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.PORENCARGO2.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/SiTeHechamos-E.jpg" alt=""  class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page"> SI TE ECHAMOS UNA MANITA</h4>
-							<p>Si quieres que te echemos una manita, te lavamos, secamos, doblamos y dejamos tu ropa lista para usarse, no pierdas horas y horas lavando y ven con nosotros.</p>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000"> SI TE ECHAMOS UNA MANITA</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Si quieres que te echemos una manita, te lavamos, secamos, doblamos y dejamos tu ropa lista para usarse, no pierdas horas y horas lavando y ven con nosotros.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Ahorre tiempo.</li>
-								<li><i class="fa fa-check-circle"></i> Servicio al instante</li>
-								<li><i class="fa fa-check-circle"></i> Ropa lista para usar</li>
-								<li><i class="fa fa-check-circle"></i> Libérate de lavar y disfruta con tu familia</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Ahorre tiempo.</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Servicio al instante</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Ropa lista para usar</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Libérate de lavar y disfruta con tu familia</li>
 							</ul>
 						</div>
 					</div>
@@ -321,19 +330,19 @@
 				<div class="services-item-full It8">
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">MEMBRESÍA</h4>
-							<p>Lavanderías y tintorerías Lávame Mucho tiene membresías que se acomoda a ti. Nosotros vamos a tu domicilio, la lavamos, secamos, doblamos y la volvemos a dejar a la puerta de tu casa una vez a la semana. Se lavan edredones, tenis y manteles en nuestros costales chico, mediano, grande y jumbo.</p>
+							<h4 class="title-page" class="title-page" data-aos="zoom-out" data-aos-duration="1000">MEMBRESÍA</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Lavanderías y tintorerías Lávame Mucho tiene membresías que se acomoda a ti. Nosotros vamos a tu domicilio, la lavamos, secamos, doblamos y la volvemos a dejar a la puerta de tu casa una vez a la semana. Se lavan edredones, tenis y manteles en nuestros costales chico, mediano, grande y jumbo.</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Libérate al 100% del lavado de tu ropa</li>
-								<li><i class="fa fa-check-circle"></i>Recolección y entrega sin costo</li>
-								<li><i class="fa fa-check-circle"></i>Tu ropa quedará  como nueva </li>
-								<li><i class="fa fa-check-circle"></i> </li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Libérate al 100% del lavado de tu ropa</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i>Recolección y entrega sin costo</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i>Tu ropa quedará  como nueva </li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> </li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/membresia1_600x400.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/Membresia-2-E2.jpg" alt=""  class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -343,18 +352,18 @@
 				<div class="services-item-full It9">
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.TINTORERIA.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/Empresarial.jpg" alt=""  class="bord" data-aos="zoom-in-right"  data-aos-delay="1200" />
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">EMPRESARIAL</h4>
-							<p>Si necesitas lavar sabanas, manteles, uniformes, cortinas ven con nosotros para echarte una manita, contamos con precios especiales de acuerdo a tus necesidades.</p>
-							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Hoteles</li>
-								<li><i class="fa fa-check-circle"></i> Escuelas</li>
-								<li><i class="fa fa-check-circle"></i> Centros deportivos</li>
-								<li><i class="fa fa-check-circle"></i> Etc</li>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">EMPRESARIAL</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Si necesitas lavar sabanas, manteles, uniformes, cortinas ven con nosotros para echarte una manita, contamos con precios especiales de acuerdo a tus necesidades.</p>
+							<ul class="service-list" class="title-page" >
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Hoteles</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Escuelas</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Centros deportivos</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Etc</li>
 							</ul>
 						</div>
 					</div>
@@ -366,25 +375,25 @@
 				<div class="services-item-full It10">
 					<div class="col-xs-12 col-md-6">
 						<div class="desc-wrap">
-							<h4 class="title-page">TINTORER&Iacute;A</h4>
-							<p>Para el cuidado de tus prendas contamos procesos de lavado y secado especiales, para todo tipo de prenda que son:</p>
+							<h4 class="title-page" data-aos="zoom-out" data-aos-duration="1000">TINTORER&Iacute;A</h4>
+							<p data-aos="fade-down-right" data-aos-duration="9000">Para el cuidado de tus prendas contamos procesos de lavado y secado especiales, para todo tipo de prenda que son:</p>
 							<ul class="service-list">
-								<li><i class="fa fa-check-circle"></i> Abrigos</li>
-								<li><i class="fa fa-check-circle"></i> Trajes</li>
-								<li><i class="fa fa-check-circle"></i> Chamarras</li>
-								<li><i class="fa fa-check-circle"></i> Camisas</li>
-								<li><i class="fa fa-check-circle"></i> Sacos</li>
-								<li><i class="fa fa-check-circle"></i> Pantalón de vestir</li>
-								<li><i class="fa fa-check-circle"></i> Corbatas</li>
-								<li><i class="fa fa-check-circle"></i> Vestido de noche</li>
-								<li><i class="fa fa-check-circle"></i> Prendas de piel</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Abrigos</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Trajes</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Chamarras</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Camisas</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Sacos</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Pantalón de vestir</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Corbatas</li>
+								<li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Vestido de noche</li>
+								<li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fa fa-check-circle"></i> Prendas de piel</li>
 								<li><i class="fa fa-check-circle"></i> Etc</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="about-img">
-							<img src="images/servicio.TINTORERIA.jpg" alt="" class="img-responsive" />
+							<img src="images/Servicios/Tintoreria-2-E2.jpg" alt="" class="bord" data-aos="zoom-in-right"  data-aos-delay="1200"/>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -562,7 +571,7 @@
 		
 	</div>
 
-	<script>
+	<!-- <script>
 	var It1 = {
 	rotate: 
 		{
@@ -579,7 +588,7 @@
 
 
 
-	</script>
+	</script> -->
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&#038;ver=4.1.5'></script>
@@ -589,5 +598,10 @@
 	
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"> </script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
 </body>
 </html>
