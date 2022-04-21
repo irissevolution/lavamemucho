@@ -179,11 +179,11 @@ body{
 	.popup{
 		max-width: 400px;
 		/* height: 210px; */
-		padding: 7px;
-		background:url('../images/fondo.jpg') no-repeat center center;  
+		padding: 7px 30px;
+		background:url('../images/fondo_chico.jpg') no-repeat center center;  
 	}  	
 	 .popup a{
-		width: 50;
+		padding: 0px 0px;
 		
 	} 
 
