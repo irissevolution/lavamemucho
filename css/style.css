@@ -1,4 +1,5 @@
 
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -323,12 +324,15 @@ a:hover {
 	margin-bottom: 80px;
     margin-top: 80px;
 }
+/* Fuentes losbter */
+
 .page-title .lead{
-	font-size: 30px;
+	font-size: 45px;
     color: #16A085  ; /*sE CAMBI� #0071BC POR ESTE #63b1a9  */
     line-height: 34px;
-    font-family: raleway, sans-serif;
-    font-weight: 700;
+    /* font-family: raleway, sans-serif; */
+	font-family: 'Lobster', cursive;
+    font-weight: 100;
 }
 
 
@@ -398,18 +402,20 @@ p {
 .navbar-main .navbar-nav > li > a {
 	padding-top:35px;
 	min-height: 100px; /*modifica la tamaño de vertical de nav*/
-	font-size:12px;
+	font-size:20px;
 	line-height:22px;
 	color:#333;
 	background-color:#fff;
-	font-weight:700;
-	text-transform:uppercase;
+	font-weight:400;
+	/* text-transform:uppercase; */
 	-webkit-transition: 0.2s all linear;
-		transition: 0.2s all linear;
+	transition: 0.2s all linear;
+	font-family: 'Lobster', cursive;
 }
 .navbar-main.stiky .navbar-nav > li > a {
     padding-top: 20px;
     min-height: 60px;
+	
 }
 .navbar-main .navbar-nav > li > a:hover,
 .navbar-main .navbar-nav > li > a:focus,
@@ -629,8 +635,8 @@ width: auto;
 	font-size: 30px;
     color: #16A085  ; /*sE CAMBI� #0071BC POR ESTE #63b1a9  */
     line-height: 34px;
-    font-family: raleway, sans-serif;
-    font-weight: 700;
+    font-family:'Lobster', cuersive;
+    font-weight: 100;
 }
 
 @keyframes rotation {
@@ -702,8 +708,8 @@ width: auto;
     font-size: 30px;
     color: #fff; /*cambia texto del banner*/
     line-height: 42px;
-    font-family: raleway, sans-serif;
-    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    /* font-weight: 900; La hace más gruesa*/ 
 	
 	margin-left:80px;
 	-webkit-transition: all .3s linear;
@@ -825,7 +831,9 @@ width: auto;
     color: rgb(32, 32, 32);  /*Cambia color de la letra del subbanner*/
     line-height: 42px;
     font-weight: 900;
-	text-transform:uppercase;
+	font-family: 'Lobster', cursive;
+	/* text-transform:uppercase; */
+
 	margin-bottom: 0;
 }
 .subbanner .breadcrumb {
@@ -889,12 +897,14 @@ width: auto;
 	color:#333;
 	font-weight:700;
 	margin-bottom:30px;
+	font-family: 'Lobster', cursive;
 }
 .title-page{
 	color: #16A085;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 22px;
+	font-weight: 400;
 	margin-bottom: 20px;
+	font-family: 'Lobster', cursive;
 }
 .about-img{
 	margin-bottom:20px;
@@ -956,7 +966,7 @@ width: auto;
     font-size: 18px;
     color: #333333;
     line-height: 22px;
-    font-family: raleway, sans-serif;
+	font-family: 'Lobster', cursive;
     font-weight: 700;
 }
 .services-item.right .ket h4{
@@ -964,7 +974,7 @@ width: auto;
     font-size: 18px;
     color: #333333;
     line-height: 22px;
-    font-family: raleway, sans-serif;
+	font-family: 'Lobster', cursive;
     font-weight: 700;
 }
 .service-list{
@@ -1046,11 +1056,11 @@ width: auto;
 	color:#fff;
 }
 .stat-item .stat-title{
-	font-size: 18px;
+	font-size: 28px;
     color: #FFFFFF;
     line-height: 25px;
-    font-family: raleway, sans-serif;
-    font-weight: 700;
+    font-family: 'Lobster', cursive;;
+    font-weight: 100;
 }
 .stat-item .stat-title .number{
 	font-size: 50px;
@@ -1121,7 +1131,9 @@ width: auto;
     border-top-color: transparent;
 }
 .panel-faq .panel-title {
-	font-size: 14px;
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+	/* font-weight: 50; */
 }
 .panel-faq .panel-body p {
 	margin: 10px 0;
@@ -1301,8 +1313,8 @@ width: auto;
 	font-size: 18px;
     color: #16A085;
     line-height: 25px;
-    font-family: raleway, sans-serif;
-    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
 }
 .blog-item .item-body .body-footer{
 	width:100%;
@@ -1366,8 +1378,9 @@ width: auto;
 .post-item .post-title a{
 	font-size: 24px;
     line-height: 30px;
+	font-family: 'Lobster' , cursive;
     color: #16A085;
-	font-weight: 700;
+	font-weight: 100;
 	padding-bottom:20px;
 	display:block;
 	text-align: center;
@@ -1379,11 +1392,12 @@ width: auto;
 }
 .post-item .post-read-more{
 	color: #16A085;
-	font-weight: 700;
-	font-size: 14px;
+	font-weight: 100;
+	font-size: 20px;
 	margin-top:20px;
 	clear:both;
 	display:block;
+	font-family: 'Lobster', cuersive;
 }
 .post-item .post-read-more:hover{
 	color: #85DBFF;
@@ -1457,10 +1471,11 @@ width: auto;
 	padding-bottom:20px;
 }
 .widget .widget-heading{
-	font-size: 18px;
+	font-size: 20px;
     color: #5C5C5C;
     line-height: 22px;
-    font-weight: 700;
+	font-family: 'Lobster',cursive;
+    font-weight: 100;
 	letter-spacing: 2px;
 	display:block;
 }
