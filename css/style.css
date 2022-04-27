@@ -169,22 +169,22 @@ body{
 @media (max-width: 512px) {
 	.popup{
 		height: 280px;
-		background:url('../images/fondo_0_8.png') no-repeat center center;  
+		background:url('../images/fondo_chico.jpg') no-repeat center center;  
+		padding: 5px;
 	}  	
 	.popup a{
 		margin: 180px 100px 40px 0px;
-		width: 75%;
 	}
 }
 @media (max-width: 458px) {
 	.popup{
-		max-width: 400px;
+		/* height: 195px;
+		max-width: 375px; */
 		/* height: 210px; */
-		padding: 7px 30px;
 		background:url('../images/fondo_chico.jpg') no-repeat center center;  
 	}  	
 	 .popup a{
-		padding: 0px 0px;
+		padding: 10px 100px;
 		
 	} 
 
@@ -376,7 +376,7 @@ p {
           box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
 }
 .header-top{
-	background-color:#025951    ; /*CAMBI� verde obscuro */ 
+	background-color:#006D68    ; /*CAMBI� verde obscuro */ 
 	color:#fff;
 	height:45px;
 }
