@@ -70,7 +70,7 @@ function Chal() {
   var image = document.getElementById('myImage');
       image.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.80032886111314!2d-98.85311265981753!3d19.264849281600902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a6ab6667d285163!2sLavame%20Mucho%20Lavanderias!5e0!3m2!1ses-419!2smx!4v1635567709592!5m2!1ses-419!2smx";
   var image = document.getElementById('fotoLocal');
-      image.src = "images/about_history-u24541-fr-1.jpg";
+      image.src = "images/about_history-u24541-fr-2.jpg";
 
   }
 function Eca() {
