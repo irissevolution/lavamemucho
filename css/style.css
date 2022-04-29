@@ -2095,8 +2095,8 @@ img.redimension {
 		min-height: 45px; /*modifica la tamaño de vertical de nav*/
 	}
 	.services-item .icon img{
-		width:108px;
-		height:108px;
+		width:91px;
+		height:91px;
 	}
 }
 @media (max-width: 768px) {
